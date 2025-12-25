@@ -1,0 +1,67 @@
+import React from "react";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+
+const Footer = () => {
+  return (
+    <footer
+      className="w-full bg-[#f7f9fb] text-[#1f2937] mt-32"
+      style={{ fontFamily: "'Poppins', sans-serif" }}
+    >
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+        {/* About Company */}
+        <div>
+          <h3 className="text-[16px] font-semibold mb-6">About Company</h3>
+          <p className="text-[14px] leading-7 text-gray-700">
+            Kripa Engineering Associates Pvt. Ltd., established in May 2018, is a reputable
+            name in property appraisal, surveying, and property consultancy. Dedicated to
+            excellence and delivering quality services, it has earned a commendable
+            reputation in the industry.
+          </p>
+        </div>
+
+        {/* Our Company */}
+        <div>
+          <h3 className="text-[16px] font-semibold mb-6">Our Company</h3>
+          <ul className="space-y-3 text-[14px] text-gray-700">
+            <li>Our Services</li>
+            <li>Our Experts</li>
+            <li>Company Insights</li>
+            <li>Contact Us</li>
+            <li>Get A Quote</li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-[16px] font-semibold mb-6">Contact Info</h3>
+          <p className="text-[14px] font-semibold mb-2">Corporate Office Address</p>
+          <p className="text-[14px] leading-6 text-gray-700 mb-4">
+            Venkatesh Marg, House No. 74,
+            <br />
+            Battisputali, Kathmandu
+          </p>
+
+          <div className="flex gap-3 items-center text-[14px] text-gray-700 mb-3">
+            <AiOutlinePhone className="w-5 h-5 text-gray-600" />
+            <span>+977-9851156669 / +977-9860288368</span>
+          </div>
+
+          <div className="flex gap-3 items-center text-[14px] text-gray-700">
+            <AiOutlineMail className="w-5 h-5 text-gray-600" />
+            <span>info@kripaengineering.com.np</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="border-t border-gray-300 py-10 text-center">
+        <img src="/path/to/logo.png" className="mx-auto mb-4 h-14" alt="logo" />
+        <p className="text-[14px] text-gray-600">
+          © 2025 Kripa Engineering Associates Pvt. Ltd. All rights reserved
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
